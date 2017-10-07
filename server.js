@@ -1,4 +1,5 @@
 var express = require('express'),
+var cors = require('cors');
 app = express(),
 port = process.env.PORT || 3000,
 mongoose = require('mongoose'),
@@ -16,6 +17,7 @@ mongoose.connect('mongodb://localhost/shiva');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors({origin:'https://shivanandbuddarthi.github.io'}))
 
 
 var routes = require('./api/routes/appRoutes'); //importing route
