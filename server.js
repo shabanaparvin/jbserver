@@ -12,7 +12,7 @@ bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/shiva'); 
+mongoose.connect('mongodb://admin:admin@ds115671.mlab.com:15671/shivanandbuddarthi'); 
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
