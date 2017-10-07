@@ -17,7 +17,7 @@ mongoose.connect('mongodb://admin:admin@ds115671.mlab.com:15671/shivanandbuddart
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors({origin:'https://shivanandbuddarthi.github.io'}))
+app.use(cors({origin:'*'}))
 
 
 var routes = require('./api/routes/appRoutes'); //importing route
